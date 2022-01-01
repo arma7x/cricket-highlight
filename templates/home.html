@@ -1,0 +1,35 @@
+<div class="kui-flex-wrap">
+  <style>
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin:0px;
+      padding:0px;
+      width: 220px;
+    }
+    .wrapper {
+      width:100%;
+      height:60px;
+      display:flex;
+      flex-direction:row;
+    }
+  </style>
+  <ul class="kui-list kai-container" style="font-size:14px;width:240px;">
+    {{#matches}}
+      {{#video}}
+      <li class="homeNav kui-divider">
+        <span>
+          <pre style="font-size:12px;">{{ text }}</pre>
+        </span>
+      </li>
+      {{/video}}
+      {{^video}}
+        <li class="homeNav kui-divider">
+          <div class="wrapper" style="justify-content:center;align-items:center;">
+            NEXT PAGE
+          </div>
+        </li>
+      {{/video}}
+    {{/matches}}
+  </ul>
+</div>

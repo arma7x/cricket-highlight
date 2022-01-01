@@ -1,0 +1,47 @@
+{
+  "lang": "en-US",
+  "id": "Cricket Highlight",
+  "name": "Cricket Highlight",
+  "description": "Watch free HD cricket match highlights and replay extended video online from top leagues around the world",
+  "theme": "#873eff",
+  "theme_color": "#873eff",
+  "background_color": "#873eff",
+  "orientation": "portrait",
+  "start_url": "/index.html",
+  "categories": [
+    "sports"
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon56x56.png",
+      "type": "image/png",
+      "sizes": "56x56"
+    },
+    {
+      "src": "/icons/icon112x112.png",
+      "type": "image/png",
+      "sizes": "112x112"
+    }
+  ],
+  "b2g_features": {
+    "version": "3.0.0",
+    "type": "web",
+    "default_locale": "en-US",
+    "developer": {
+      "name": "arma7x",
+      "url": "https://www.kaiostech.com"
+    },
+    "origin": "cricket-highlight",
+    "permissions": {},
+    "dependencies": {
+      "ads-sdk": "1.5.3"
+    },
+    "locales": {
+      "en-US": {
+        "name": "Cricket Highlight",
+        "subtitle": "Watch free HD cricket match highlights and replay extended video online from top leagues around the world",
+        "description": "Watch free HD cricket match highlights and replay extended video online from top leagues around the world"
+      }
+    }
+  }
+}
