@@ -165,7 +165,9 @@ window.addEventListener("load", function() {
           if (selected.text === 'Changelogs') {
             this.$router.push('changelogs');
           } else if (selected.text === 'Refresh') {
-            this.methods.load();
+            this.verticalNavIndex = -1;
+            this.data.matches = [];
+            this.methods.load(1);
           } else if (selected.text === 'Exit') {
             window.close();
           }
