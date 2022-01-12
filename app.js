@@ -174,6 +174,7 @@ window.addEventListener("load", function() {
         }, () => {});
       },
       center: function() {
+        displayKaiAds();
         if (this.verticalNavIndex > -1 && this.data.matches.length > 0) {
           if (this.data.matches[this.verticalNavIndex].video) {
             this.$router.showLoading();
@@ -189,7 +190,7 @@ window.addEventListener("load", function() {
                   }, () => {});
                 }, 100);
               } else {
-                this.$router.showToast('Error');
+                this.$router.showToast('Unavailable');
               }
             })
             .catch(err => {
