@@ -42,7 +42,7 @@ const xhr = function(method, url, data={}, query={}, headers={}) {
 
 const getMatches = (p) => {
   return new Promise((resolve, reject) => {
-    xhr('GET', 'https://malaysiaapi.herokuapp.com/cricket/v1/list', {}, {'p': p})
+    xhr('GET', 'https://malaysiaapi-arma7x.koyeb.app/cricket/v1/list', {}, {'p': p})
     .then(data => {
       resolve(data.response);
     })
@@ -125,7 +125,7 @@ window.addEventListener("load", function() {
       }
     },
     unmounted: function() {
-      
+
     },
     methods: {
       load: function(page) {
@@ -178,7 +178,7 @@ window.addEventListener("load", function() {
         if (this.verticalNavIndex > -1 && this.data.matches.length > 0) {
           if (this.data.matches[this.verticalNavIndex].video) {
             this.$router.showLoading();
-            xhr('GET', 'https://malaysiaapi.herokuapp.com/cricket/v1/get', {}, {'id': this.data.matches[this.verticalNavIndex].path})
+            xhr('GET', 'https://malaysiaapi-arma7x.koyeb.app/cricket/v1/get', {}, {'id': this.data.matches[this.verticalNavIndex].path})
             .then(data => {
               if (data.response.id) {
                 setTimeout(() => {
